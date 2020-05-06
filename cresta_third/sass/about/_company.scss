@@ -1,0 +1,67 @@
+.company {
+    width: 100%;
+    height: 930px;
+
+    @include mq-down(sm) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: $ff-en;
+        font-size: 32px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    &__lists {
+        width: 73%;
+        font-family: $ff-ja;
+        font-size: 16px;
+        margin:0 0 40px 300px;
+
+        @include mq-down() {
+            width: 100%;
+            margin: 10px auto 90px;
+        }
+    }
+
+    &__list {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    &__name {
+        text-align: left;
+        width: 26%;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    &__info {
+        text-align: left;
+        width: 85%;
+    }
+
+    &__map {
+        position: relative;
+        padding-bottom: 33%;
+        height: 0;
+        overflow: hidden;
+
+        @include mq-down() {
+            padding-bottom: 60%;
+        }
+
+        @include mq-down(sm) {
+            padding-bottom: 100%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 360px;
+        }
+    }
+}

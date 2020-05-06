@@ -1,0 +1,52 @@
+.topics {
+    height: 468px;
+    padding: 60px 0;
+
+    @include mq-down(sm) {
+        padding: 60px 10px;
+    }
+
+    &__title {
+        font-family: $ff-en;
+        font-size: 32px;
+    }
+
+    &__newslists {
+        float: right;
+        width: 60%;
+
+        @include mq-down() {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__newslist {
+        padding-top: 32px;
+    }
+
+    &__time {
+        font-family: 'Montserrat Medium', serif;
+        font-size: 10px;
+        color: #CECECE;
+        padding-bottom: 13px;
+    }
+
+    &__text {
+        font-family: $ff-ja;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    &__btn {
+        float: right;
+        padding-top: 30px;
+
+        @include mq-down() {
+            float: left;
+        }
+    }
+}

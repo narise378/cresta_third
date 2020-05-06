@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #525252;
+
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__copy {
+        font-family: $ff-en;
+        font-weight: lighter;
+        color: #ffffff;
+        font-size: 10px;
+        padding: 21px 0 19px 0;
+        text-align: center;
+    }
+}
